@@ -24,14 +24,16 @@
 
          <h3> Quizz</h3>
 
-         <form>
+         <form autocomplete="off" method="POST" action="nome.apelido@gmail.com">
              <fieldset>
                  <label for="fname">Nome:</label>
-                 <input type="text" id="fname" name="fname"><br><br>
+                 <input type="text" id="fname" name="fname" placeholder="Carolina" size="50"><br><br>
                  <label for="lname">Apelido:</label>
-                 <input type="text" id="lname" name="lname"><br><br>
+                 <input type="text" id="lname" name="lname" placeholder="Lopes" size="50"><br><br>
                  <label for="email">Email:</label>
-                 <input for="email" id="email" name="email"><br><br>
+                 <input for="email" id="email" name="email" placeholder="nomeutilizador@gmail.com" size="50"><br><br>
+                 <label type="phone">Número de telemóvel:</label>
+                 <input type="tel" id="phone" placeholder="121 345 678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
              </fieldset>
 
              <fieldset>
@@ -87,10 +89,44 @@
 
                <p><u>Como se chama o monumento em baixo?</u></p>
                <label for="fname">Nome:</label>
-               <input type="text" id="fname" name="fname"><br><br>
+               <input type="text" id="fname" name="fname" maxlength="20" autofocus><br><br>
                <input type="image" src="images/palacio.jpg" height="155">
 
+               <p><u>Qual é aproximadamente a área da cidade de Veneza?</u></p>
+               <label for="areas">Escolha uma área:</label>
+               <select id="areas" name="areas">
+                    <option value="412">412m<sup>2</sup></option>
+                    <option value="357">357m<sup>2</sup></option>
+                    <option value="521" selected>521m<sup>2</sup></option>
+                    <option value="678">678m<sup>2</sup></option>
+               </select>
+
+               <p><u>Assinale a alternativa correta sobre o clima de Veneza:</u></p>
+               <input list="alternativas" name="alternativa">
+               <datalist id="alternativas">
+                    <option value="Invernos agradáveis e verões quentes">
+                    <option value="Invernos tropicais e verões extremamente quentes">
+                    <option value="Invernos rigorosos e verões pouco quentes">
+                    <option value="Invernos rigorosos e verões quentes">
+               </datalist>
+
+               <p><u>Comente o Quizz</u></p>
+               <textarea name="message" style="width: 350px;height: 50px;" multiple>Gostava que tivesse mais perguntas</textarea>
+
              </fieldset>
+         </form>
+
+         <form oninput="amount.value = parseInt(valor.value)*parseInt(taxa.value)/100">
+            <center><p><u>Avalie o Quizz</u></p></center>
+            <center><p><input type="number" name="avaliar" min="0" max="100" step="5">%</p></center>
+         </form>
+
+         <form>
+             <center><p><u>Avalie o site no geral</u></p></center>
+             <center><input tpe="range" min="0" max="100" name="site" value="0" oninput="siteN.value = parseInt(site.value)"></center>
+             <output name="siteN" for="site"></output>
+             <br>
+             <center><input type="submit" value="Submit Formulário"></center>
          </form>
         
     </body>
