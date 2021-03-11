@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Carolina Lopes">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Lisboa">
+        <link rel="shortcut icon" type="image/x-icon" href="images/mundo.ico"/>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>PW Lab2 </title>
+        <style>
+            *{
+                font-family: sans-serif;
+                text-align: center;
+            }
+            table, td, th{
+                border:1px solid black; 
+                table-layout: fixed;
+                text-align: center; 
+                border-collapse: collapse;
+                margin: auto
+            }
+            tr:nth-child(even){
+                background-color:khaki;
+            }
+            tr:nth-child(odd){
+                background-color: lavender;
+            }
+        
+            th{
+                height:30px;
+            }
+            h3{
+                color:rgba(0, 0, 255, 0.651);
+                text-align: center;
+            }
+            p::first-letter{
+                color:royalblue;
+                font-size:xx-large;
+            }
+            
+            body{ 
+                margin: auto;
+                }
+                .cor {color:darkgoldenrod}
+                .texto{font-weight: bold;}
+                #unico {font-family: sans-serif;}
+               
+            a:link{color:blue}
+            a:visited{color:tan}
+            a:hover{color:brown}
+            a:active{color:darkblue}
+
+            div h3{
+                background-color: rgb(231, 231, 49) ;
+            }
+            div > h4{
+                background-color: rgba(233, 188, 121, 0.925);
+            }
+
+        </style>
+    </head>
+    <body>
+        <body style="background-color:aliceblue"></body>
+        <h1> <center>Veneza</center></h1>
+         <center><img src="images/veneza.png"></center>
+         <br>
+
+         <!--Menu de Navegação-->
+         <nav>
+            <a href = "index.html"> Introdução|</a>
+            <a href = "local.html"> Localização|</a>
+            <a href = "multimedia.html"> Multimédia|</a>
+            <a href="info.html"> Informações|</a>
+            <a href="quizz.html"> Quizz|</a>
+            <a href="comentarios.html"> Comentários|</a>
+            <b><a href="html5-css.html">HTML|</a></b>
+            <a href="../index.html"> Home</a>
+        </nav>
+
+        <main>
+        <!--Conteúdo Principal-->
+        <div><h3>HTML5 e CSS</h3></div>
+
+        <section>
+            <div><h4><i>HTML 5</i></h4></div>
+            <p>HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.É a quinta versão da linguagem HTML. Esta nova versão traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web, através de novas funcionalidades como semântica e acessibilidade.</p>
+        
+            <!--Tabela-->
+            <table>
+                <tr class="cor" class="texto" id="unico">
+                    <th>Elementos semânticos do HTML5</th>
+                    <th>Usou este elemento nesta página?</th>
+                    <th>Funcionamento do elemento:</th>
+                </tr>
+                <tr>
+                    <td>Header</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Indica cabeçalho</td>
+                </tr>
+                <tr>
+                    <td>Nav</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Indica menu de navegação</td>
+                </tr>
+                <tr>
+                    <td>Main</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Indica conteúdo principal e único, que não se repete</td>
+                </tr>
+                <tr>
+                    <td>Article</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Indica porção do documento que pode ser vista de forma independente</td>
+                </tr>
+                <tr>
+                    <td>Section</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Especifica uma parte do conteúdo, usada em conjunto com etiquetas</td>
+                </tr>
+                <tr>
+                    <td>Aside</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Indica anotações, publicidade ou outros assuntos desconexos</td>
+                </tr>
+                <tr>
+                    <td>Footer</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Indica rodapé da secção</td>
+                </tr>
+                <tr>
+                    <td>Details</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Define detalhes adicionais que o utilizador pode ver ou esconder, contidos num elemento summary</td>
+                </tr>
+                <tr>
+                    <td>Meter</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Define uma medida escalar estática dentro de um intervalo</td>
+                </tr>
+                <tr>
+                    <td>Progress</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Define uma barra de progresso de uma tarefa</td>
+                </tr>
+                <tr>
+                    <td>Abbr</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Indica o significado de uma abreviatura em conjunto com o atributo title</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Informação sobre o contacto do autor</td>
+                </tr>
+            </table>
+
+        </section>
+        <section>
+            <div><h4><i>CSS</i></h4></div>
+            <p>Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) a um documento web.</p>
+
+            <!--Tabela 1-->
+            <table>
+                <tr class="cor" class="texto" id="unico">
+                    <th>Tipo de Seletor</th>
+                    <th>Usou o seletor nesta página?</th>
+                    <th>Funcionamento do seletor:</th>
+                </tr>
+                <tr>
+                    <td>Universal</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Aplica o estilo a todos os elementos da página</td>
+                </tr>
+                <tr>
+                    <td>Tipo</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Usa o nome do marcador a estilizar</td>
+                </tr>
+                <tr>
+                    <td>Classe</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Associa um nome a um estilo</td>
+                </tr>
+                <tr>
+                    <td>Id</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Permite identificar univocamente um elemento do HTML</td>
+                </tr>
+                <tr>
+                    <td>Atributo</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Aplicam-se a atributos de elementos</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-Classe</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>São associados ao estado de um elemento</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-Elemento</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Aplicam-se a partes de elementos</td>
+                </tr>
+            </table>
+            <p>    
+            </p>
+        
+            <!--Tabela 2-->
+            <table>
+                <tr class="cor" class="texto" id="unico">
+                    <th>Combinadores de Seletores</th>
+                    <th>Usou o combinador nesta página?</th>
+                    <th>Funcionamento do combinador:</th>
+                </tr>
+                <tr>
+                    <td>Seletores descendentes</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Todos os <i>p</i> são "dentro" de um <i>div</i></td>
+                </tr>
+                <tr>
+                    <td>Seletores filhos</td>
+                    <td><i class="material-icons" style="color:rgba(0, 0, 255, 0.651);font-size: 20px;">done</i></td>
+                    <td>Todos os <i>p</i> que estão "logo dentro" de <i>div</i></td>
+                </tr>
+                <tr>
+                    <td>Seletores adjacentes</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Todos os <i>p</i> que estão colocados depois de um <i>div</i></td>
+                </tr>
+                <tr>
+                    <td>Seletores imediatamente adjacentes</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>Todos os <i>p</i> que estão colocados "imediatamente" depois de um <i>div</i></td>
+                </tr>
+                <tr>
+                    <td>Agrupa seletores</td>
+                    <td><i class="material-icons" style="color:red;font-size: 20px">report_problem</i></td>
+                    <td>São separados por vírgulas</td>
+                </tr>
+            </table>
+
+        </section>
+        <p></p>
+        <hr>
+
+         <section>
+         <!--Parte Final de todas as páginas-->
+         <center><svg width="600px" height="500px">
+            <g transform="translate(100,100)">
+                <a href="index.html">
+                 <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:22; visibility:hidden" >Introdução
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                        <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum" begin="1s" dur="5s" fill="freeze" />
+                    </text> 
+                </a>
+                <a href="local.html">
+                    <text id="TextElement" x="0" y="10" style="font-family:courier,arial,helvetica;font-size:24; visibility:hidden">Localização
+                           <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                           <animateMotion path="M 0 0 L 30 110" begin="1s" dur="5s" fill="freeze" />
+                           <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="5s" dur="5s" fill="freeze" /> 
+                       </text> 
+                   </a>
+                <a href="multimedia.html">
+                    <text id="TextElement" x="150" y="50" style="font-family:Verdana;font-size:20; visibility:hidden">Multimédia
+                           <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                           <animateMotion path="M 0 0 L 100 110" begin="1s" dur="5s" fill="freeze" />
+                           <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                       </text> 
+                   </a>
+                   <a href="info.html">
+                    <text id="TextElement" x="120" y="30" style="font-family:Verdana;font-size:12; visibility:hidden">Informação
+                           <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                           <animateMotion path="M 0 0 L 50 150" begin="1s" dur="5s" fill="freeze" />
+                           <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="2s" dur="5s" fill="freeze" /> 
+                       </text> 
+                   </a>
+                   <a href="quizz.html">
+                    <text id="TextElement" x="170" y="20" style="font-family:Arial;font-size:16; visibility:hidden">Quizz
+                           <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+                           <animateMotion path="M 0 0 L 30 110" begin="1s" dur="5s" fill="freeze" />
+                           <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                       </text> 
+                   </a>
+                   <a href="comentarios.html">
+                    <text id="TextElement" x="0" y="10" style="font-family:Times;font-size:18; visibility:hidden">Comentários
+                           <set attributeName="visibility" attributeType="CSS" to="visible" begin="3s" dur="5s" fill="freeze" />
+                           <animateMotion path="M 0 0 L 30 30" begin="1s" dur="5s" fill="freeze" />
+                           <animateTransform attributeName="-ms-transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                        
+                       </text> 
+                   </a>
+            </g>
+        </svg></center>
+    </section>
+
+    <footer><p>Nome: Carolina Lopes| Número: a22002703| Ano:2º| Universidade:Lusúfona</p></footer>
+    </main>
+    </body>
+</html>
