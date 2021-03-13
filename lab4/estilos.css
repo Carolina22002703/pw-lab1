@@ -1,0 +1,40 @@
+@import "estilos.css";
+
+*{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body{ 
+    margin: auto;
+    }
+    .cor {color:darkgoldenrod}
+    .texto{font-weight: bold;}
+    #unico {font-family: sans-serif;}
+    #menuo1,#menuo2,#menuo3,#menuo4,#menuo5,#menuo6,#menuo7{
+        font-family:initial;
+    }
+   
+a:link{color:blue}
+a:visited{color:tan}
+a:hover{color:brown}
+a:active{color:darkblue}
+
+h3{
+    color:rgba(0, 0, 255, 0.651);
+    text-align: center;
+}
+
+div h3{
+    background-color: rgb(231, 231, 49) ;
+}
+div > h4{
+    background-color: rgba(233, 188, 121, 0.925);
+}
+
+p,h4,a{color:rgba(34, 32, 32, 0.664)}
+
+h1{
+    color: steelblue;
+    font-size: 60px;
+}
