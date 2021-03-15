@@ -1,10 +1,12 @@
 @import "estilos.css";
 
+/*Universal*/
 *{
     font-family: sans-serif;
-    text-align: center;
+    text-align:center;
 }
 
+/*Tipo*/
 body{ 
     margin: auto;
     }
@@ -14,27 +16,103 @@ body{
     #menuo1,#menuo2,#menuo3,#menuo4,#menuo5,#menuo6,#menuo7{
         font-family:initial;
     }
-   
+
+/*Display*/    
+span{
+    display: block;
+}
+
+/*Pseudo-classe*/
 a:link{color:blue}
 a:visited{color:tan}
 a:hover{color:brown}
 a:active{color:darkblue}
 
+/*Pseudo-classe*/
+main +  footer {
+    font-size: 34px;
+    margin: auto;
+    width: 800px;
+}
+
+/*Atributo*/
+[class$="test"]{
+    background-color: rgba(245, 219, 104, 0.781);
+
+}
+
+/*Atributo*/
+input[type="button"]{
+    background-color: sienna;
+}
+
+/*Seletores Descendente*/
+
 h3{
     color:rgba(0, 0, 255, 0.651);
     text-align: center;
 }
-
-div h3{
-    background-color: rgb(231, 231, 49) ;
-}
-div > h4{
-    background-color: rgba(233, 188, 121, 0.925);
-}
-
-p,h4,a{color:rgba(34, 32, 32, 0.664)}
-
 h1{
     color: steelblue;
     font-size: 60px;
 }
+div h3{
+    background-color: rgb(231, 231, 49) ;
+}
+
+/*Seletores Filhos*/
+div > h4{
+    background-color: rgba(233, 188, 121, 0.925);
+}
+
+/*Agrupar os seletores*/
+p,h4,a{color:rgba(34, 32, 32, 0.664)}
+
+image,iframe{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(31, 31, 240, 0.678);
+}
+
+/*Visualização de elementos*/
+h4.hidden{
+    display: none;
+}
+
+/*Posição de Imagens e Textos*/
+img.absolute{
+    height: 250px;
+    width: 320px;
+    position: absolute;
+    top: 35px;
+    right: 1535px;
+    border: 2px solid rgb(9, 9, 148);
+}
+
+img.fixed{
+    height: 250px;
+    width: 350px;
+    position: fixed;
+    bottom: 60px;
+    right: 32px;
+    border: 2px solid rgb(9, 9, 148);
+}
+
+figcaption.texto_absolute{
+    height: 250px;
+    width: 320px;
+    position: absolute;
+    top: 300px;
+    right: 1540px;
+    color:rgba(34, 32, 32, 0.664);
+}
+
+figure.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    padding: 5px;
+    background-color: sandybrown;
+    border: 2px solid sandybrown;
+}
+

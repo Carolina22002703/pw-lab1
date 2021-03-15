@@ -40,7 +40,7 @@
     <body>
         <body style="background-color:aliceblue"></body>
         <h1> <center>Veneza</center></h1>
-         <center><img src="images/veneza.png"></center>
+         <center><img src="images/veneza.png" style="height: 400px;"></center>
          <br>
          
          <!--Menu de Nagevação-->
@@ -59,55 +59,64 @@
         <!--Conteúdo Principal-->
 
         <section>
-        <!--Avaliação-->
-            <div><h3>Comentários</h3></div>
-
-            <form>
-            <center><p><b>Ajude-nos a perceber o que melhorar!!</b></p></center>
-            <fieldset>
-              <label for="clareza">Como classifica o nosso website quanto à clareza?</label>
-              <input type="range" id="clareza" name="clareza" min="0" max="100"><br><br>
-
-              <label for="rigor">Como classifica o nosso website quanto ao rigor?</label>
-              <input type="range" id="rigor" name="rigor" min="0" max="100"><br><br>
-
-              <label for="profundidade">Como classifica o nosso website quanto à profundidade?</label>
-              <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
-              <label for="Pessimo">Péssimo</label>
-              <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
-              <label for="Medio">Médio</label>
-              <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
-              <label for="Bom">Bom</label>
-              <input type="checkbox" id="Avaliar" name="Avaliar" value="Muito Bom">
-              <label for="Muito Bom">Muito Bom</label><br><br>
-
-              <label for="amplitude">Como classifica o nosso website quanto à sua amplitude?</label>
-              <input type="range" id="amplitude" name="amplitude" min="0" max="100"><br><br>
-
-              <label for="logica">Como classifica o nosso website quanto à lógica?</label>
-              <input type="range" id="logica" name="logica" min="0" max="100"><br><br>
-
-              <label for="significancia">Como classifica o nosso website quanto à significância?</label>
-              <input type="range" id="significancia" name="significancia" min="0" max="100"><br><br>
-
-              <label for="originalidade">Como classifica o nosso website quanto à originalidade?</label>
-              <input type="radio" id="Pessimo" name="gender" value="Pessimo">
-              <label for="Pessimo">Péssimo</label>
-              <input type="radio" id="Medio" name="gender" value="Medio">
-              <label for="Medio">Médio</label>
-              <input type="radio" id="Bom" name="gender" value="Bom">
-              <label for="Bom">Bom</label>
-              <input type="radio" id="Muito Bom" name="gender" value="Muito Bom">
-              <label for="Muito Bom">Muito Bom</label><br><br>
-
-              <p>Sugestões de Melhoria:</p>
-              <textarea name="message" rows="3" cols="50">Escreve aqui...</textarea><br><br>
-              <input type="hidden" id="lab3" name="lab3" value="100">
-
-            </fieldset>
-            </form>
-            <hr>
-            </section>
+            <!--Avaliação-->
+                <div><h3>Comentários</h3></div>
+                <h4 class="hidden">Formulário do Lab4</h4>
+    
+                <form>
+                <center><p><b>Ajude-nos a perceber o que melhorar!!</b></p></center>
+                <fieldset>
+                  <span><label for="clareza">Como classifica o nosso website quanto à clareza?</label></span>
+                  <input type="range" id="clareza" name="clareza" min="0" max="100">
+                  <br>
+    
+                  <span><label for="rigor">Como classifica o nosso website quanto ao rigor?</label></span>
+                  <input type="range" id="rigor" name="rigor" min="0" max="100">
+                  <br>
+    
+                  <span><label for="profundidade">Como classifica o nosso website quanto à profundidade?</label></span>
+                  <input type="checkbox" id="Avaliar" name="Avaliar" value="Pessimo">
+                  <label for="Pessimo">Péssimo</label>
+                  <input type="checkbox" id="Avaliar" name="Avaliar" value="Medio">
+                  <label for="Medio">Médio</label>
+                  <input type="checkbox" id="Avaliar" name="Avaliar" value="Bom">
+                  <label for="Bom">Bom</label>
+                  <input type="checkbox" id="Avaliar" name="Avaliar" value="Muito Bom">
+                  <label for="Muito Bom">Muito Bom</label>
+                  <br>
+    
+                  <span><label for="amplitude">Como classifica o nosso website quanto à sua amplitude?</label></span>
+                  <input type="range" id="amplitude" name="amplitude" min="0" max="100">
+                  <br>
+    
+                  <span><label for="logica">Como classifica o nosso website quanto à lógica?</label></span>
+                  <input type="range" id="logica" name="logica" min="0" max="100">
+                  <br>
+    
+                  <span><label for="significancia">Como classifica o nosso website quanto à significância?</label></span>
+                  <input type="range" id="significancia" name="significancia" min="0" max="100">
+                  <br>
+    
+                  <span><label for="originalidade">Como classifica o nosso website quanto à originalidade?</label></span>
+                  <input type="radio" id="Pessimo" name="gender" value="Pessimo">
+                  <label for="Pessimo">Péssimo</label>
+                  <input type="radio" id="Medio" name="gender" value="Medio">
+                  <label for="Medio">Médio</label>
+                  <input type="radio" id="Bom" name="gender" value="Bom">
+                  <label for="Bom">Bom</label>
+                  <input type="radio" id="Muito Bom" name="gender" value="Muito Bom">
+                  <label for="Muito Bom">Muito Bom</label>
+                  <br>
+    
+                  <span><p>Sugestões de Melhoria:</p></span>
+                  <textarea name="message" rows="3" cols="50">Escreve aqui...</textarea>
+                  <br>
+                  <input type="hidden" id="lab3" name="lab3" value="100">
+    
+                </fieldset>
+                </form>
+                <hr>
+                </section>
 
             <section>
             <!--Parte Final de todas as páginas-->

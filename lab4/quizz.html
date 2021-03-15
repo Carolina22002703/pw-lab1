@@ -33,13 +33,14 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>PW Lab2 </title>
         <style>
+            
            
         </style>
     </head>
     <body>
         <body style="background-color:aliceblue"></body>
         <h1> <center>Veneza</center></h1>
-         <center><img src="images/veneza.png"></center>
+         <center><img src="images/veneza.png" style="height: 400px;"></center>
          <br>
          
          <!--Menu de Navegação-->
@@ -62,21 +63,23 @@
          <div><h3> Quizz</h3></div>
          <form autocomplete="off" method="POST" action="nome.apelido@gmail.com">
              <fieldset>
-                 <label for="fname">Nome:</label>
-                 <input type="text" id="fname" name="fname" placeholder="Carolina" size="50"><br><br>
-                 <label for="lname">Apelido:</label>
-                 <input type="text" id="lname" name="lname" placeholder="Lopes" size="50"><br><br>
-                 <label for="email">Email:</label>
-                 <input for="email" id="email" name="email" placeholder="nomeutilizador@gmail.com" size="50"><br><br>
-                 <label type="phone">Número de telemóvel:</label>
-                 <input type="tel" id="phone" placeholder="121 345 678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+                 <legend>Dados Pessoais</legend>
+                 <span><div class="First_test"><label for="fname">Nome:</label></div></span>
+                 <input type="text" id="fname" name="fname" placeholder="Carolina" size="50">
+                 <span><div class="Second_test"><label for="lname">Apelido:</label></div></span>
+                 <input type="text" id="lname" name="lname" placeholder="Lopes" size="50">
+                 <span><div class="Three_test"><label for="email">Email:</label></div></span>
+                 <input for="email" id="email" name="email" placeholder="nomeutilizador@gmail.com" size="50">
+                 <span><div class="Four_test"><label type="phone">Número de telemóvel:</label></div></span>
+                 <input type="tel" id="phone" placeholder="121 345 678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
              </fieldset>
 
              <fieldset>
-                 <label for="fname"><u>Em que país se localiza a cidade de Veneza?</u></label>
-                 <input type="text" id="fname" name="fname"><br><br>
+                 <legend>Perguntas sobre a temática do site:</legend>
+                 <span><p for="fname"><u>Em que país se localiza a cidade de Veneza?</u></p></span>
+                 <input type="text" id="fname" name="fname">
 
-                <p><u>Qual é o patrono da cidade de Veneza?</u></p>
+                <span><p><u>Qual é o patrono da cidade de Veneza?</u></p></span>
                 <input type="radio" id="São Marcos" name="gender" value="São Marcos">
                 <label for="São Marcos">São Marcos</label>
                 <input type="radio" id="São Pedro" name="gender" value="São Pedro">
@@ -86,7 +89,7 @@
                 <input type="radio" id="São Leopoldino" name="gender" value="São Leopoldino">
                 <label for="São Leopoldino">São Leopoldino</label>
 
-                <p><u>Veneza faz fronteira com quantas cidades?</u></p>
+                <span><p><u>Veneza faz fronteira com quantas cidades?</u></p></span>
                 <input type="checkbox" id="7" name="7" value="7">
                 <label for="7">7</label>
                 <input type="checkbox" id="9" name="9" value="9">
@@ -96,13 +99,13 @@
                 <input type="checkbox" id="12" name="12" value="12">
                 <label for="12">12</label>
 
-                <p><u>Entre que datas é o período do Verão em Veneza?</u></p>
+                <span><p><u>Entre que datas é o período do Verão em Veneza?</u></p></span>
                 <label for="datemin">Defina o primeiro dia:</label>
-                <input type="date" id="datemin" name="datemin" min="20-05-2021"><br><br>
+                <input type="date" id="datemin" name="datemin" min="20-05-2021">
                 <label for="datemax">Defina o último dia:</label>
-                <input type="date" id="datemax" name="datemax" min="20-05-2021"><br><br>
+                <input type="date" id="datemax" name="datemax" min="20-05-2021">
 
-               <p><u>Qual é o principal meio de transporte em Veneza?</u></p>
+               <span><p><u>Qual é o principal meio de transporte em Veneza?</u></p></span>
                <input type="checkbox" id="Bicicleta" name="Bicicleta" value="Bicicleta">
                <label for="Bicicleta">Bicicleta</label>
                <input type="checkbox" id="Carro" name="Carro" value="Carro">
@@ -112,23 +115,23 @@
                <input type="checkbox" id="Gondôla" name="Gondôla" value="Gôndola">
                <label for="Gondôla">Gondôla</label>
 
-               <label for="favcolor"><u>Qual a cor predominante da bandeira de Veneza?</u></label>
+               <span><label for="favcolor"><u>Qual a cor predominante da bandeira de Veneza?</u></label></span>
                <input type="color" id="favcolor" name="favecolor" value="#ff0000">
 
-               <p><u>Quantas pontes há na cidade de Veneza?</u></p>
+               <span><p><u>Quantas pontes há na cidade de Veneza?</u></p></span>
                <label for="quantity">Entre 234 a 400:</label>
                <input type="number" id="quantity" name="quantity" min="234" max="400"> 
 
-               <p><u>Qual é aproximadamente a população da cidade de Veneza?</u></p>
+               <span><p><u>Qual é aproximadamente a população da cidade de Veneza?</u></p></span>
                <label for="populacao">População entre (200.000 a 290.000):</label>
                <input type="range" id="populacao" name="populacao" min="200.000" max="290.000">
 
-               <p><u>Como se chama o monumento em baixo?</u></p>
+               <span><p><u>Como se chama o monumento em baixo?</u></p></span>
                <label for="fname">Nome:</label>
-               <input type="text" id="fname" name="fname" maxlength="20" autofocus><br><br>
+               <input type="text" id="fname" name="fname" maxlength="20" autofocus>
                <input type="image" src="images/palacio.jpg" height="155">
 
-               <p><u>Qual é aproximadamente a área da cidade de Veneza?</u></p>
+               <span><p><u>Qual é aproximadamente a área da cidade de Veneza?</u></p></span>
                <label for="areas">Escolha uma área:</label>
                <select id="areas" name="areas">
                     <option value="412">412m<sup>2</sup></option>
@@ -137,7 +140,7 @@
                     <option value="678">678m<sup>2</sup></option>
                </select>
 
-               <p><u>Assinale a alternativa correta sobre o clima de Veneza:</u></p>
+               <span><p><u>Assinale a alternativa correta sobre o clima de Veneza:</u></p></span>
                <input list="alternativas" name="alternativa">
                <datalist id="alternativas">
                     <option value="Invernos agradáveis e verões quentes">
@@ -146,7 +149,7 @@
                     <option value="Invernos rigorosos e verões quentes">
                </datalist>
 
-               <p><u>Comente o Quizz</u></p>
+               <span><p><u>Comente o Quizz</u></p></span>
                <textarea name="message" style="width: 350px;height: 50px;" multiple>Gostava que tivesse mais perguntas</textarea>
 
              </fieldset>
