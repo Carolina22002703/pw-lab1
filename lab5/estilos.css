@@ -1,0 +1,236 @@
+@import "estilos.css";
+
+html{
+    background-image: url(images/fundo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+ /*Display*/    
+ span{
+    display: block;
+}
+
+/*Pseudo-classe*/
+a:link{color:blue}
+a:visited{color:tan}
+a:hover{color:brown}
+a:active{color:darkblue}
+
+
+/*Atributo*/
+[class$="test"]{
+    background-color: rgba(245, 219, 104, 0.781);
+
+}
+
+/*Seletores Descendente*/
+h3{
+    color:rgba(0, 0, 255, 0.651);
+    text-align: center;
+}
+h1{
+    color: steelblue;
+    font-size: 60px;
+    text-align: center;
+}
+
+div h3{
+    background-color: rgb(231, 231, 49) ;
+}
+
+/*Seletores Filhos*/
+div > h4{
+    background-color: rgba(233, 188, 121, 0.925);
+}
+
+/*Agrupar os seletores*/
+p,h4,a{color:rgba(34, 32, 32, 0.664)}
+
+image,iframe{
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(31, 31, 240, 0.678);
+}
+
+/*Visualização de elementos*/
+h4.hidden{
+    display: none;
+}
+
+/*Posição de Imagens e Textos*/
+img.absolute{
+    height: 250px;
+    width: 320px;
+    position: absolute;
+    top: 35px;
+    right: 1535px;
+    border: 2px solid rgb(9, 9, 148);
+}
+
+img.fixed{
+    height: 250px;
+    width: 350px;
+    position: fixed;
+    bottom: 60px;
+    right: 32px;
+    border: 2px solid rgb(9, 9, 148);
+}
+
+figcaption.texto_absolute{
+    height: 250px;
+    width: 320px;
+    position: absolute;
+    top: 300px;
+    right: 1540px;
+    color:rgba(34, 32, 32, 0.664);
+}
+
+figure.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    padding: 5px;
+    background-color: sandybrown;
+    border: 2px solid sandybrown;
+} 
+
+/*Formatação de layouts*/
+*{
+    font-family: sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+.grid-container{ 
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2px 2fr 2px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header header header header header'
+    'item item item item item '
+    'nav . main . aside '
+    '. item6 item6 item6 . '
+    'footer footer footer footer footer';
+    grid-gap:1vw;
+    padding: 20px;
+    text-align: center;
+    }
+    .cor {color:darkgoldenrod}
+    .texto{font-weight: bold;}
+    #unico {font-family: sans-serif;}
+    #menuo1,#menuo2,#menuo3,#menuo4,#menuo5,#menuo6,#menuo7{
+        font-family:initial;
+}
+
+
+.item2 {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        height: 800px;
+        position: relative;
+}
+    
+.item2 a {
+        display: block;
+        padding: 1em;
+        background-color: cornsilk;
+        text-align: center;
+        margin-bottom: 0.2em;
+        text-decoration: none;
+        color: #050000;
+        width: 200px;
+        height: 40px;
+}
+
+.item2 section1{
+    padding-bottom: 100px;
+}
+.item2 section2{
+    padding-bottom: 100px;
+}
+.item2 section3{
+    padding-bottom: 50px;
+}
+
+.item1{
+    grid-area: header;
+    background-color: aliceblue(150, 84, 84);
+    margin: auto;
+    width: 800px;
+    text-align: center;
+}
+
+.item3{
+    grid-area:main;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 24px;
+    margin: auto;
+    background-color: cornsilk;
+    box-shadow: black 0 2px 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 950px;
+    min-height: 100%;
+}
+
+.item4{
+    grid-area:aside;
+    display: block;
+    padding: 10px 0 ;
+    text-align: center;
+    font-size: 20px; 
+}
+
+.item5{
+    grid-area:footer;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    font-size: 1vw;
+}
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 50%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 100%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
